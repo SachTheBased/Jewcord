@@ -1,0 +1,2 @@
+add add server button -> active
+get css for login and signup page

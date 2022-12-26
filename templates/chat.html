@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Chat</title>
+    <script defer src="../../static/scripts/api.js"></script>
+    <script defer src="../../static/scripts/websocket.js"></script>
+    <link rel="stylesheet" href="../../static/styles/chat.css">
+  </head>
+
+  <body onkeypress="keypress()">
+    <float id="servers">
+      <div id="serverList">
+        <button id="home">
+          <img src="../../static/images/jew.png" id="homeIcon">
+        </button><br>
+        <button id="newServer" onclick="newServer()">
+          <span id="plus">+</span>
+        </button>
+      </div>
+    </float>
+
+    <float id="channels">
+      <button id="serverName"></button><br>
+      <div id="channelsList">
+      </div>
+    </float>
+
+    <float id="members">
+      <div id="membersList">
+        <span id="roleName">Owner</span><br>
+        <span id="memberName"></span>
+      </div>
+    </float>
+
+    <float id="chatbox">
+      <div id="messages">
+  
+      </div>
+    </float>
+
+    <form id="form">
+      <input type="text" id="sendMSG" placeholder="Send message..."/>
+      <button type="submit">Send</button>
+    </form>
+
+    <div id="newServerPopup">
+        
+      <div id="PopupContent1">
+        <span id="close">&times;</span>
+        <button onclick="inputServer(1)">
+          New server
+        </button>
+      </div>
+
+      <div id="PopupContent2">
+        <span id="close">&times;</span>
+        <input id="newServerName"/>
+        <button onclick="inputServer()">
+          New 
+        </button>
+      </div>
+        
+    </div>
+    
+  </body>
+</html>

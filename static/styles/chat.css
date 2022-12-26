@@ -1,0 +1,183 @@
+@import url('https://fonts.cdnfonts.com/css/uni-sans-regular');
+
+body {
+  background-color: #36383f;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+#messages {
+  height: 95%;
+  overflow-y:auto;
+  font-size: 14;
+}
+
+#sendMSG {
+  position: fixed;
+  width: 80%;
+  height: 4%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  border-radius: 7.5px;
+  background-color: #48444c;
+  border: none;
+  padding: 10px;
+}
+
+#newServer {
+    border: none;
+    border-radius: 50%;
+    height: 8%;
+    width: 90%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+input:focus {
+  outline:none!important;
+  color: white;
+}
+
+#servers {
+  float: left;
+  height: 100%;
+  background-color: #282424;
+  padding: 1px;
+}
+
+#home {
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+#homeIcon {
+  width: 7.5vmin; 
+  height: 7.5vmin;
+  margin: 0px;
+  border-radius: 50%;
+}
+
+#channels {
+  float: left;
+  height: 100%;
+  background-color: #2f3036;
+  padding-right: 1%;
+  padding-left: 1%;
+  width: 240px;
+  text-align: left;
+}
+
+#channelsList {
+  text-align: left;
+}
+
+#serverName {
+  color: white;
+  width: 100%;
+  height: 5%;
+  margin: 0px;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  text-align: left;
+}
+
+#serverName:hover {
+  background-color: #3c3e45;
+  transition-duration: 250ms;
+}
+
+#channelName {
+  color: #96969d;
+  border: none;
+  background-color: transparent;
+  border-radius: 7.5px;
+  width: 100%;
+  text-align: left;
+  padding: 5px;
+}
+
+#channelName:hover {
+  background-color: #43454d;
+  transition-duration: 250ms;
+}
+
+#serverName {
+  font-weight: bold;
+}
+
+#members {
+  float: right;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #2f3036;
+}
+
+#roleName {
+  color: #65656a;
+}
+
+#author:hover {
+  text-decoration: underline;
+}
+
+#messages::-webkit-scrollbar {
+  background-color: #2e3238;
+}
+
+#messages::-webkit-scrollbar-thumb {
+  background: #202225;
+  border-radius: 10px;
+}
+
+#msg:hover {
+  background-color: #38343c;
+}
+
+#newServerPopup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+#PopupContent1 {
+  display: none;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+#PopupContent2 {
+  display: none;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+#close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
